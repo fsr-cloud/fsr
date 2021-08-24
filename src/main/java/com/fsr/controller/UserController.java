@@ -28,6 +28,7 @@ public class UserController {
     @RequestMapping("login")
     public String login(String username, String password, ModelMap model) {
         try {
+            System.out.println("hello");
             //获取主体对象
             Subject subject = SecurityUtils.getSubject();
             subject.login(new UsernamePasswordToken(username, password));

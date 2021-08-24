@@ -7,15 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fsr" />
+        <module name="springboot_shiro_jsp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fsr" target="1.8" />
+      <module name="springboot_shiro_jsp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="fsr" options="-parameters" />
+      <module name="springboot_shiro_jsp" options="-parameters" />
     </option>
   </component>
 </project>
